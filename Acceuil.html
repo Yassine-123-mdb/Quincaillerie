@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quincaillerie YASSINO</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+     body {
+      background-image: url(./image/bg_quinc.webp);
+      background-size: cover; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      background-position: center center; 
+      color: white; 
+    }
+  
+#log{
+    color: brown;
+    font-size: 18px;
+    
+}
+    #bienvenu {
+      margin-top: 50px;
+      color: rgb(24, 17, 10);
+      text-shadow: 2px 2px 2px;
+      font-size: 60px;
+    }
+   
+    #Cnx{
+      position: relative;left: 70%;
+    }
+    h2 {
+      margin-bottom: 30px;
+      margin-top: 30px;
+      color: rgb(2, 19, 12);
+    }
+    #msg {
+      color: rgb(22, 15, 7);
+      text-shadow: 2px 2px 2px;
+      padding-top: 40px;
+      font-size: 40px;
+      animation: moveText 25s linear infinite;
+    }
+    @keyframes moveText {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand"style="color:#47ec8f;" href="#">Quincaillerie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Acceuil.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produits.php">Produit</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact/contact.php">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="admin/connect.php">admin</a>
+          </li>
+        </ul>
+        
+        <button id="Cnx" class="btn btn-outline-primary ms-2" routerLink="login">Connexion</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container text-center mt-5">
+    <h1 id="bienvenu">Bienvenue a la <span style="color: #47ec8f;">Quincaillerie </span>YASSINO</h1>
+    <p id="msg" style="color: #47ec8f;">Votre source de produits de quincaillerie de qualite.</p>
+    <a href="produits.php" class="btn btn-success btn-lg" style="background: #000; text-decoration: none;color: #47ec8f;">Decouvrir nos Produits</a>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
